@@ -14,4 +14,11 @@ public class WordFinderTest {
         List<String> englishWords = wordFinder.findByLanguage("english");
         assertEquals(0, englishWords.size());
     }
+
+    @Test
+    public void japaneseNotSupported() {
+        WordFinder wordFinder = new WordFinder();
+        List<String> englishWords = wordFinder.findByLanguage("japanese");
+        assertEquals(0, englishWords.size());
+    }
 }
