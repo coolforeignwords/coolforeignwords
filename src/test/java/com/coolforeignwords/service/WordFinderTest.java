@@ -25,6 +25,6 @@ public class WordFinderTest {
     public void dutchNotSupported() {
         WordFinder wordFinder = new WordFinder();
         List<String> englishWords = wordFinder.findByLanguage("dutch");
-        assertEquals(0, englishWords.size());
+        assertEquals(1, englishWords.size());
     }
 }
